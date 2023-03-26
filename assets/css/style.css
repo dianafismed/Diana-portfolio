@@ -1,37 +1,105 @@
 /*          FONTS          */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Eagle+Lake&family=Jim+Nightshade&display=swap');
 
 
 /*          GENERICS          */
-body{
-  
+:root{
+  --tema: rgb(150, 65, 150);
+  --tema2: rgb(190, 90, 240);
+  --tema3: rgb(236, 35, 243);
+  --media: rgb(235, 178, 234);
+}
+section{
+  margin: 4em 0;
+}
+.btn-back{
+  text-decoration: none;
+  color: var(--media);
+  float: right;
+  padding-right: 2em;
 }
 
-header{
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
+/*          INITIAL          */
 .initial{
-  background-color: black;
+  color: var(--tema);
+  margin: 0;
 }
-
 .photo img{
-  width: 60%;
-  
+  width: 55%;
+  border-radius: 5px;
 }
-
 .list{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+.list h1{
+  color: var(--media);
+  font-family: "Eagle Lake", "Jim Nightshade", "Caramel";
+  font-size: 4em;
+}
 .list a{
-  text-decoration: none;
-  color: blueviolet;
-  font-weight: bold;
-  
+  font-family: "Dancing Script";
+  color: var(--tema);
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+
+
+/*          CV  &   PROJECTS        */
+.cv, .projects{
+  color: var(--tema2);
+  display: none;
+}
+.cv h3, .cv h4, .projects h4, .projects h5{
+  color: var(--tema3);
+}
+.projects h3{
+  color: var(--media);
+}
+.projects h4{
+  margin: 2em 0;
+}
+.cv p{
+  padding-left: 2em;
+}
+.cv li, .projects li{
+  list-style-type: none;
+}
+.about{
+  text-align: justify;
+}
+
+
+/*          FOOTER          */
+.media a{
+  color: var(--media);
+  font-size: 25px;
+  margin: 15px;
+}
+
+
+/*              MEDIAS             */
+@media (max-width:768px) {
+  .photo img{
+    width: 80%;
+    border-radius: 5px;
+  }
+  .list h1{
+    font-size: 2em;
+  }
+  .media a{
+    font-size: 1em;
+  }
+  .projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .projects h3, .projects h4{
+    margin: 1em 0;
+  }
 }

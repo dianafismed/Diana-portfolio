@@ -8,28 +8,102 @@
   <title>Diana Avila</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body>
-  <header>
-    <h1>Diana Avila</h1>
-  </header>
-  <section class="container-fluid initial">
+<body class="bg-black">
+  <!-- Initial -->
+  <section id="initial" class="initial container-fluid">
     <div class="row text-center">
       <div id="photo" class="col-md-6 photo">
-        <img src="assets/img/diana.jpg" class="img-fluid" alt="">
+        <img src="assets/img/diana.jpg" class="img-fluid" alt="foto Diana">
       </div>
       <div id="letter" class="col-md-6 list">
-        <a id="cv" href=""><h2>CV</h2></a>
-        <a id="project" href=""><h2>Projetos</h2></a>
-        <a id="contact" href=""><h2>Contato</h2></a>
+        <h1 class="mt-5 mb-5">DIANA AVILA</h1>
+        <a id="btn-cv" class="btn" href="#cv"><h2>CV</h2></a>
+        <a id="btn-project" class="btn" href="#projects"><h2>Projetos</h2></a>
+        <a id="btn-contact" class="btn" href=""><h2>Contato</h2></a>
       </div>
+  </section>
+  <!-- About -->
+  <section id="cv" class="container cv">
+    <div class="about">
+      <h3>Eu, Diana ...</h3>
+      <p>
+        Sou recém-graduada no curso de Análise e Desenvolvimento de Sistemas pela Faculdade Tecnológica de Ribeirão Preto (FATEC).<br>
+        Trabalho, atualmente, na área financeira, mas tenho grande interesse em mudar de área.<br>
+        Não possuo (ainda) experiência profissional na área de programação.<br>
+        Sou proativa, inteligente e prezo pela qualidade.<br>
+        Estou disponível para trabalhos remotos.<br>
+      </p>
+    </div >
+    <div class="academy">
+      <h4>Graduação</h4>
+      <ul>
+        <li>Tecnologia em Análise e Desenvolvimento de Sistemas - FATEC</li>
+        <li>Bacharelado em Física Médica - USP</li>
+        <li>Curso Sequencial em Gestão Financeira - Moura Lacerda</li>
+      </ul>
+      <h4>Pós-Graduação</h4>
+      <ul>
+        <li>CSI: Criminalística - Unyleya</li>
+        <li>Psicologia Forense - Unyleya</li>
+      </ul>
+      <h4>Idiomas</h4>
+      <ul>
+        <li>Inglês Intermediário</li>
+        <li>Francês básico</li>
+      </ul>
     </div>
+    <a href="#" class="btn-back" onclick="showCv()">Voltar</a>
+  </section>
+  <!-- Projects-->
+  <section id="projects" class="container projects">
+    <h3 class="text-center">PROJETOS</h3>
+    <div class="row">
+      <div class="row col-md-8">
+        <h4 class="text-center">IMERSÕES</h4>
+        <div class="col-md-4">
+          <h5>ElasNaTech</h5>
+          <ul>
+            <li>Arquiteta</li>
+            <li>Cardápio</li>
+            <li>Ótica</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Santander</h5>
+          <ul>
+            <li>Contador</li>
+            <li>Instagram</li>
+            <li>To-do List</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>ImersãoDev</h5>
+          <ul>
+            <li>Conversores</li>
+            <li>Calculadora de média</li>
+            <li>Mentalist</li>
+            <li>Supertrunfo</li>
+          </ul>
+        </div>  
+      </div>
+      <div class="col-md-4 text-center">
+        <h4>PRÓPRIOS</h4>
+        <ul>
+          <li>Isas Bolos e Doces</li>
+          <li>pelaslentesdadeia</li>
+        </ul>
+      </div>
+    </div> 
+    <a href="#" class="btn-back">Voltar</a>
   </section>
 
-  <footer class="container">
-    <a href=""><i class="fa fa-facebook"></i></a>
-    <a href=""><i class="fa fa-instagram"></i></a>
-    <a href=""><i class="fa fa-github"></i></a>
-    <a href=""><i class="fa fa-linkedin"></i></a>
+  <footer class="container p-2">
+    <div class="text-center p-3 media">
+      <a href="https://www.facebook.com/dianafismed" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/dianafismed/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://github.com/dianafismed" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/dianafismed/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
   </footer>
 
 
