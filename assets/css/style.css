@@ -25,10 +25,18 @@ section{
 .initial{
   color: var(--tema);
   margin: 0;
+  overflow: hidden;
 }
 .photo img{
   width: 55%;
   border-radius: 5px;
+  position: relative;
+}
+.animate-photo{
+  animation: esquerda 1s linear;
+}
+.animate-letter{
+  animation: direita 1s linear;
 }
 .list{
   display: flex;
@@ -50,7 +58,11 @@ section{
 
 
 /*          CV  &   PROJECTS        */
-.cv, .projects{
+.cv{
+  color: var(--tema2);
+  display: none;
+}
+.projects{
   color: var(--tema2);
   display: none;
 }
@@ -82,6 +94,24 @@ section{
 }
 
 
+/*              KEYFRAMES             */
+@keyframes esquerda {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}
+@keyframes direita {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(600px);
+  }
+}
+
 /*              MEDIAS             */
 @media (max-width:768px) {
   .photo img{
@@ -103,3 +133,5 @@ section{
     margin: 1em 0;
   }
 }
+
+

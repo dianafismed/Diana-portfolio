@@ -1,8 +1,17 @@
+const photo = document.getElementById("photo")
+const letter = document.getElementById("letter")
+const btn = document.getElementById("btn-cv")
+const btnBackCv = document.getElementById("btn-back-cv") 
 
 function showCv(){
-  x = -100;
-  this.click = document.getElementById('btn-cv');
-  this.esq = document.querySelector('#photo');
-  this.dir = document.querySelector('#letter');
-  this.esq.style.transform = translate(100);
+  photo.classList.add("animate-photo")
+  letter.classList.add("animate-letter")
+  document.getElementsByClassName(".cv").set.Atribute("display", "block")
 }
+
+function hiddenCv(){
+  photo.classList.remove("animate-photo")
+  letter.classList.remove("animate-letter")
+}
+
+function (){}
