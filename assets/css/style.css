@@ -12,6 +12,7 @@
 }
 section{
   margin: 4em 0;
+  overflow: hidden;
 }
 .btn-back{
   text-decoration: none;
@@ -25,7 +26,6 @@ section{
 .initial{
   color: var(--tema);
   margin: 0;
-  overflow: hidden;
 }
 .photo img{
   width: 55%;
@@ -33,10 +33,13 @@ section{
   position: relative;
 }
 .animate-photo{
-  animation: esquerda 1s linear;
+  animation: esquerda 2s linear ;
 }
 .animate-letter{
-  animation: direita 1s linear;
+  animation: direita 1.5s linear;
+}
+.animate-cv{
+  animation: cima 1.5s;
 }
 .list{
   display: flex;
@@ -58,9 +61,12 @@ section{
 
 
 /*          CV  &   PROJECTS        */
+#cv{
+  display: none;
+}
 .cv{
   color: var(--tema2);
-  display: none;
+  position: relative;
 }
 .projects{
   color: var(--tema2);
@@ -109,6 +115,11 @@ section{
   }
   100% {
     transform: translateX(600px);
+  }
+}
+@keyframes cima {
+  to{
+    transform: translateY(-600px);
   }
 }
 
