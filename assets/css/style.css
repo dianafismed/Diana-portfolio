@@ -51,13 +51,14 @@ a:link{text-decoration: none;}
  justify-content: center;
 }
 
-#init-items a{color: var(--color-title-2);}
+#init-items a, #btn-contact{color: var(--color-title-2);}
 
 #about h3, #about h4{color: var(--color-title);}
 
 #arrow-back{
-  background-color: var(--color-letters);
+  background-color: var(--color-back);
   color: var(--color-title-2);
+  font-size: 2rem;
   margin: 2rem;
 }
 #projects{margin: auto;}
@@ -78,12 +79,26 @@ a:link{text-decoration: none;}
   padding: 1rem;
 }
 
-#medias{
+.modal-header, .modal-body{
+  background-color: var(--color-back);
+  color: var(--color-title);
+}
+
+.modal-body a{
+  color: var(--color-title);
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.medias{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#medias a{
+
+.medias p{color: var(--color-title);}
+
+.medias a{
   color: var(--color-title-2);
   font-size: 1.5rem;
   margin: 1rem;
@@ -131,7 +146,7 @@ a:link{text-decoration: none;}
 
   #init-items h1{font-size: 2rem;}
  
-  #medias a{font-size: 1rem;}
+  .medias a{font-size: 1rem;}
 
   @keyframes up {
     to{transform: translateY(-450px);}

@@ -7,7 +7,7 @@ const btnCv = document.getElementById('btn-cv')
 const btnProject = document.getElementById('btn-project')
 const btnVoltar = document.querySelector('.back')
 
-btnCv.addEventListener('click', ()=> open(about))
+btnCv.addEventListener('click', ()=> open())
 btnVoltar.addEventListener('click', ()=> close())
 
 function open(open){
@@ -15,10 +15,9 @@ function open(open){
   photo.classList.add('left')
   items.classList.remove('right-reverse')
   items.classList.add('right')
-
-  open.classList.remove('up-reverse')
-  open.removeAttribute('hidden')
-  open.classList.add('up')
+  about.classList.remove('up-reverse')
+  about.removeAttribute('hidden')
+  about.classList.add('up')
 }
 
 function close(){
@@ -27,8 +26,13 @@ function close(){
   photo.classList.add('left-reverse')
   items.classList.remove('right')
   items.classList.add('right-reverse')
-
   about.classList.remove('up')
   about.setAttribute('hidden', 'true')
   about.classList.add('up-reverse')
 }
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
