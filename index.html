@@ -1,66 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Diana Avila</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body class="bg-black">
-  <!-- Initial -->
-  <section id="initial" class="initial container-fluid">
-    <div class="row text-center">
-      <div id="photo" class="col-md-6 photo">
-        <img src="assets/img/diana.jpg" class="img-fluid" alt="foto Diana">
-      </div>
-      <div id="letter" class="col-md-6 list">
-        <h1 class="mt-5 mb-5">DIANA AVILA</h1>
-        <a id="btn-cv" class="btn" href="#cv" onclick="showCv()"><h2>CV</h2></a>
-        <a id="btn-project" class="btn" href="#projects"><h2>Projetos</h2></a>
-        <a id="btn-contact" class="btn" href=""><h2>Contato</h2></a>
-      </div>
-  </section>
-  <!-- About -->
-  <section id="cv" class="container cv">
-    <div class="about">
-      <h3>Eu, Diana ...</h3>
-      <p>
-        Sou recém-graduada no curso de Análise e Desenvolvimento de Sistemas pela Faculdade Tecnológica de Ribeirão Preto (FATEC).<br>
-        Trabalho, atualmente, na área financeira, mas tenho grande interesse em mudar de área.<br>
-        Não possuo (ainda) experiência profissional na área de programação.<br>
-        Sou proativa, inteligente e prezo pela qualidade.<br>
-        Estou disponível para trabalhos remotos.<br>
-      </p>
-    </div >
-    <div class="academy">
-      <h4>Graduação</h4>
-      <ul>
-        <li>Tecnologia em Análise e Desenvolvimento de Sistemas - FATEC</li>
-        <li>Bacharelado em Física Médica - USP</li>
-        <li>Curso Sequencial em Gestão Financeira - Moura Lacerda</li>
-      </ul>
-      <h4>Pós-Graduação</h4>
-      <ul>
-        <li>CSI: Criminalística - Unyleya</li>
-        <li>Psicologia Forense - Unyleya</li>
-      </ul>
-      <h4>Idiomas</h4>
-      <ul>
-        <li>Inglês Intermediário</li>
-        <li>Francês básico</li>
-      </ul>
+<body>
+  <section id="init">
+    <div id="init-photo">
+      <img id="init-photo-item" src="assets/img/diana-moon.jpg" alt="Foto de Diana">
     </div>
-    <a id="btn-back-cv" href="#" class="btn-back" onclick="hiddenCv()">Voltar</a>
+    <div id="init-items">
+      <h1>DIANA AVILA</h1>
+      <a id="btn-cv"        href="#cv">       <h2>CV</h2>       </a>
+      <a id="btn-project"   href="#projects"> <h2>Projetos</h2> </a>
+      <a id="btn-contact"   href="">          <h2>Contato</h2>  </a>
+    </div>   
   </section>
+
+  <section id="about" class="container hidden">
+    <h3>Eu, Diana ...</h3>
+    <p>
+      Sou recém-graduada no curso de Análise e Desenvolvimento de Sistemas pela Faculdade Tecnológica de Ribeirão Preto (FATEC).<br>
+      Trabalho, atualmente, na área financeira, mas tenho grande interesse em mudar de área.<br>
+      Não possuo (ainda) experiência profissional na área de programação.<br>
+      Sou proativa, inteligente e prezo pela qualidade.<br>
+      Estou disponível para trabalhos remotos.<br>
+    </p>
+    <h4>Graduação</h4>
+    <ul>
+      <li>Tecnologia em Análise e Desenvolvimento de Sistemas - FATEC</li>
+      <li>Bacharelado em Física Médica - USP</li>
+      <li>Curso Sequencial em Gestão Financeira - Moura Lacerda</li>
+    </ul>
+    <h4>Pós-Graduação</h4>
+    <ul>
+      <li>CSI: Criminalística - Unyleya</li>
+      <li>Psicologia Forense - Unyleya</li>
+    </ul>
+    <h4>Idiomas</h4>
+    <ul>
+      <li>Inglês Intermediário</li>
+      <li>Francês básico</li>
+    </ul>
+    <button class="btn back">Voltar</button>
+  </section>
+
   <!-- Projects-->
-  <section id="projects" class="container projects">
-    <h3 class="text-center">PROJETOS</h3>
-    <div class="row">
-      <div class="row col-md-8">
-        <h4 class="text-center">IMERSÕES</h4>
-        <div class="col-md-4">
+  <section id="projects" class="hidden">
+    <h3 class="">PROJETOS</h3>
+    <div class="">
+      <div class="">
+        <h4 class="">IMERSÕES</h4>
+        <div class="">
           <h5>ElasNaTech</h5>
           <ul>
             <li>Arquiteta</li>
@@ -68,7 +64,7 @@
             <li>Ótica</li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="">
           <h5>Santander</h5>
           <ul>
             <li>Contador</li>
@@ -76,7 +72,7 @@
             <li>To-do List</li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="">
           <h5>ImersãoDev</h5>
           <ul>
             <li>Conversores</li>
@@ -86,7 +82,7 @@
           </ul>
         </div>  
       </div>
-      <div class="col-md-4 text-center">
+      <div class="">
         <h4>PRÓPRIOS</h4>
         <ul>
           <li>Isas Bolos e Doces</li>
@@ -97,20 +93,16 @@
     <a href="#" class="btn-back">Voltar</a>
   </section>
 
-  <footer class="container p-2">
-    <div class="text-center p-3 media">
-      <a href="https://www.facebook.com/dianafismed" target="_blank"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.instagram.com/dianafismed/" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="https://github.com/dianafismed" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/dianafismed/" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <footer>
+    <div id="medias">
+      <a href="https://www.facebook.com/dianafismed"      target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/dianafismed/"    target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://github.com/dianafismed"            target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/dianafismed/"  target="_blank"><i class="fa fa-linkedin"></i></a>
     </div>
   </footer>
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/c7d4facc8d.js" crossorigin="anonymous"></script>
   <script src="assets/js/scripts.js"></script>
 </body>

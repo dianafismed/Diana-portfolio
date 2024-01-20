@@ -1,66 +1,96 @@
 /*          FONTS          */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Eagle+Lake&family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 /*          GENERICS          */
 :root{
-  --tema: rgb(150, 65, 150);
-  --tema2: rgb(190, 90, 240);
-  --tema3: rgb(236, 35, 243);
-  --media: rgb(235, 178, 234);
+  --color-back: #000000;
+  --color-title: #e97ee9;
+  --color-title-2: rgb(190, 90, 240);
+  --color-letters: rgb(245, 245, 245);
 }
+
+body{
+  background-color: var(--color-back);
+  font-family: "Roboto";
+  color: var(--color-letters);
+}
+
 section{
-  margin: 4em 0;
+  margin: 4em;
   overflow: hidden;
 }
-.btn-back{
-  text-decoration: none;
-  color: var(--media);
-  float: right;
-  padding-right: 2em;
-}
 
+a:link{text-decoration: none;}
+
+.hidden{display: none;}
+
+.left{animation: left 2s linear forwards;}
+
+.right{animation: right 2s linear forwards;}
+
+.up{animation: up 2s forwards;}
+
+.back{
+  background-color: var(--color-letters);
+  color: var(--color-back);
+}
 
 /*          INITIAL          */
-.initial{
-  color: var(--tema);
-  margin: 0;
-}
-.photo img{
-  width: 55%;
-  border-radius: 5px;
-  position: relative;
-}
-.animate-photo{
-  animation: esquerda 2s linear ;
-}
-.animate-letter{
-  animation: direita 1.5s linear;
-}
-.animate-cv{
-  animation: cima 1.5s;
-}
-.list{
+#init{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.list h1{
-  color: var(--media);
-  font-family: "Eagle Lake", "Jim Nightshade", "Caramel";
-  font-size: 4em;
+
+#init-photo-item{
+  width: 70%;
+  border-radius: 10px;
 }
-.list a{
-  font-family: "Dancing Script";
-  color: var(--tema);
-  font-weight: bolder;
-  letter-spacing: 10px;
+
+#init-items h1{
+  color: var(--color-title);
+  font-size: 4rem;
 }
+
+#init-items{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#init-items a{color: var(--color-title-2);}
+
+/*          KEYFRAMES         */
+@keyframes left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-700px);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(700px);
+  }
+}
+@keyframes up {
+  to{
+    transform: translateY(-600px);
+  }
+}
+
+/*          ABOUT         */
 
 
 /*          CV  &   PROJECTS        */
+/*
 #cv{
   display: none;
 }
@@ -91,50 +121,30 @@ section{
   text-align: justify;
 }
 
-
+*/
 /*          FOOTER          */
-.media a{
-  color: var(--media);
-  font-size: 25px;
-  margin: 15px;
+#medias{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#medias a{
+  color: var(--color-title-2);
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 
-
-/*              KEYFRAMES             */
-@keyframes esquerda {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-600px);
-  }
-}
-@keyframes direita {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(600px);
-  }
-}
-@keyframes cima {
-  to{
-    transform: translateY(-600px);
-  }
-}
 
 /*              MEDIAS             */
 @media (max-width:768px) {
-  .photo img{
-    width: 80%;
-    border-radius: 5px;
-  }
-  .list h1{
-    font-size: 2em;
-  }
-  .media a{
-    font-size: 1em;
-  }
+  #init{display: block;  }
+
+  #init-photo-item{width: 100%;  }
+
+  #init-items h1{font-size: 2rem;}
+ 
+  #medias a{font-size: 1rem;}
+
   .projects{
     display: flex;
     flex-direction: column;
@@ -144,5 +154,3 @@ section{
     margin: 1em 0;
   }
 }
-
-

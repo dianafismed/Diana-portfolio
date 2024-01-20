@@ -1,17 +1,18 @@
-const photo = document.getElementById("photo")
-const letter = document.getElementById("letter")
-const sectionCv = document.getElementById("cv")
-const btnBackCv = document.getElementById("btn-back-cv")
+const photo = document.getElementById('init-photo')
+const items = document.getElementById('init-items')
 
 
-function showCv(){
-  photo.classList.add("animate-photo")
-  letter.classList.add("animate-letter")
+
+const about = document.getElementById('about')
+const btnCv = document.getElementById('btn-cv')
+btnCv.addEventListener('click', ()=> {
+  photo.classList.add('left')
+  items.classList.add('right')
+  about.classList.remove('hidden')
+  about.classList.add('up')
+})
+
+/*
   sectionCv.setAttribute("style","display:block")
-  //sectionCv.classList.add("animate-cv")
-}
-
-function hiddenCv(){
-  sectionCv.setAttribute("style","display:none")
-}
+*/
 
