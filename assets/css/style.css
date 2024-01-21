@@ -1,5 +1,5 @@
 /*          FONTS          */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
@@ -35,13 +35,14 @@ a:link{text-decoration: none;}
 }
 
 #init-photo-item{
-  width: 70%;
+  width: 50%;
   border-radius: 10px;
 }
 
 #init-items h1{
   color: var(--color-title);
-  font-size: 4rem;
+  font-family: 'Quintessential', serif;
+  font-size: 3rem;
 }
 
 #init-items, #about{
@@ -58,14 +59,12 @@ a:link{text-decoration: none;}
 #arrow-back{
   background-color: var(--color-back);
   color: var(--color-title-2);
-  font-size: 2rem;
-  margin: 2rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 #projects{margin: auto;}
 
-.card{
-  border: 1px solid var(--color-letters);
-  border-radius: 0%;}
+.card{border: none;}
 
 .card-body{background-color: var(--color-back);}
 
@@ -76,18 +75,20 @@ a:link{text-decoration: none;}
 #projects h1{
   background-color: var(--color-back);
   color: var(--color-title);
+  font-family: 'Quintessential', serif;
   padding: 1rem;
 }
 
 .modal-header, .modal-body{
   background-color: var(--color-back);
   color: var(--color-title);
+  font-size: 0.5rem;
 }
 
 .modal-body a{
   color: var(--color-title);
-  font-size: 2rem;
-  margin: 2rem;
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 
 .medias{
@@ -100,7 +101,6 @@ a:link{text-decoration: none;}
 
 .medias a{
   color: var(--color-title-2);
-  font-size: 1.5rem;
   margin: 1rem;
 }
 
@@ -134,7 +134,7 @@ a:link{text-decoration: none;}
 }
 
 @keyframes up {
-  to{transform: translateY(-600px);}
+  to{transform: translateY(-450px);}
 }
 
 
@@ -147,8 +147,4 @@ a:link{text-decoration: none;}
   #init-items h1{font-size: 2rem;}
  
   .medias a{font-size: 1rem;}
-
-  @keyframes up {
-    to{transform: translateY(-450px);}
-  }
 }
